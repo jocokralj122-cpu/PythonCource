@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Course | Learn Why, Not Just How</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #0a0c10;
+            color: #e4e6eb;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #2a2e35;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #58a6ff, #c084fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .header p {
+            color: #8b949e;
+            font-size: 1.1rem;
+        }
+
+        /* Navigation */
+        .nav {
+            background: #161b22;
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            border: 1px solid #2a2e35;
+        }
+
+        .nav a {
+            color: #58a6ff;
+            text-decoration: none;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .nav a:hover {
+            background: #2a2e35;
+        }
+
+        /* Lesson Cards */
+        .lesson {
+            background: #161b22;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #2a2e35;
+        }
+
+        .lesson h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #58a6ff;
+        }
+
+        .lesson h3 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.75rem 0;
+            color: #c084fc;
+        }
+
+        .lesson p {
+            margin-bottom: 1rem;
+        }
+
+        /* Code Blocks */
+        pre {
+            background: #0a0c10;
+            border: 1px solid #2a2e35;
+            border-radius: 10px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        code {
+            font-family: 'Fira Code', 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #e6e6e6;
+        }
+
+        :not(pre) > code {
+            background: #2a2e35;
+            padding: 0.2rem 0.4rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: #0a0c10;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #2a2e35;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #1a1f26;
+            color: #58a6ff;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Blockquote / Notes */
+        .note {
+            background: #1a2a3a;
+            border-left: 4px solid #58a6ff;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .warning {
+            background: #3a2a1a;
+            border-left: 4px solid #f0883e;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #2a2e35;
+            margin: 2rem 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #2a2e35;
+            color: #8b949e;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .lesson {
+                padding: 1rem;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Python Course</h1>
+            <p>Learn <strong>why</strong> things work — not just what to type</p>
+        </div>
+
+        <div class="nav">
+            <a href="#lesson1">1. Basics</a>
+            <a href="#lesson2">2. Loops</a>
+            <a href="#lesson3">3. Booleans & If</a>
+            <!-- Add more as you go -->
+        </div>
+
+        <!-- LESSON 1 -->
+        <div id="lesson1" class="lesson">
+            <h2>📘 Lesson 1: Python Basics</h2>
+            <p>Welcome to the course! We're going to learn Python from the ground up. Not just <em>what</em> to type, but <em>why</em> you type it that way.</p>
+
+            <h3>What is Python?</h3>
+            <p>Python is a high-level, easy-to-read programming language created by Guido van Rossum, a Dutch programmer.</p>
+            <p>High-level means it's designed to be readable for humans — you don't need to manage memory or worry about low-level computer details. Python handles that for you.</p>
+
+            <h3>Where to get it:</h3>
+            <ul>
+                <li><strong>Computer:</strong> Download from python.org</li>
+                <li><strong>Android:</strong> Install Pydroid from the Play Store</li>
+                <li><strong>iOS:</strong> Install ACode from the App Store</li>
+            </ul>
+
+            <h3>What is Python Used For?</h3>
+            <ul>
+                <li>Sending emails</li>
+                <li>Creating games</li>
+                <li>Automating repetitive tasks</li>
+                <li>Web development</li>
+                <li>Data analysis</li>
+                <li>Artificial intelligence</li>
+            </ul>
+
+            <h3>Why Python?</h3>
+            <p>Short answer: Python has a clear, simple syntax, and it comes with libraries that do the complex stuff for you.</p>
+            <p>A library is pre-written code that someone else made so you don't have to reinvent the wheel. Want to send an email? There's a library. Want to build a website? There's a library. You focus on your idea; Python handles the heavy lifting.</p>
+
+            <h3>Strings</h3>
+            <p>Think of a string as text. "John" is a string. "Hello world" is a string.</p>
+            <pre><code>'John'
+"John"</code></pre>
+            <p><strong>Why do quotes matter?</strong> Without quotes, Python would look for a variable with that name. If it doesn't exist, you'll get an error.</p>
+
+            <h3>Printing</h3>
+            <pre><code>print("Hello")</code></pre>
+            <p><strong>Why the parentheses?</strong> print is a function — we'll cover functions later, but for now, know that () tells Python "run this thing."</p>
+            <div class="note">
+                <strong>💡 Exception:</strong> If you're printing a number, you don't need quotes. You can use them, but then you can't do math with it.
+            </div>
+            <pre><code>print(5)      # prints 5 as a number
+print("5")    # prints 5 as text — different!</code></pre>
+
+            <h3>Variables</h3>
+            <p>Variables store information so you can use it later. Think of them like labeled boxes.</p>
+            <pre><code>name = "John"    # text → needs quotes
+age = 10         # number → no quotes</code></pre>
+            <p><strong>Why no spaces?</strong> Python reads your code word by word. <code>my name</code> would look like two separate things. Use underscores instead: <code>my_name</code>.</p>
+
+            <h3>F-Strings</h3>
+            <p>F-strings combine text with variables in a clean way.</p>
+            <pre><code>name = "John"
+age = 10
+print(f"Hello {name}, your age is {age}")</code></pre>
+            <p><strong>Why the f?</strong> The f tells Python "this string has placeholders." Without it, Python would print <code>{name}</code> as literal text.</p>
+
+            <h3>The time Library</h3>
+            <pre><code>import time
+time.sleep(1)   # wait 1 second
+print("Hello")</code></pre>
+            <p><strong>Why import?</strong> Python only loads the basics by default. When you need extra features, you import them.</p>
+
+            <h3>Summary</h3>
+            <table>
+                <thead><tr><th>Concept</th><th>What It Does</th><th>Why It Matters</th></tr></thead>
+                <tbody>
+                    <tr><td>String</td><td>Text in quotes</td><td>Distinguishes text from code</td></tr>
+                    <tr><td>print()</td><td>Displays output</td><td>Lets you see what your code does</td></tr>
+                    <tr><td>Variables</td><td>Stores values</td><td>Reusable, organized data</td></tr>
+                    <tr><td>F-strings</td><td>Combines text + variables</td><td>Cleaner than other methods</td></tr>
+                    <tr><td>import</td><td>Loads libraries</td><td>Adds functionality without rewriting</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Practice Exercises</h3>
+            <ol>
+                <li>Print your name using print()</li>
+                <li>Create a variable called favorite_food and assign it your favorite food</li>
+                <li>Create a variable called times_eaten and assign it a number</li>
+                <li>Use an f-string to print: "My favorite food is [food] and I've eaten it [number] times"</li>
+                <li>Import time and add a 2-second pause before your print statement</li>
+            </ol>
+        </div>
+
+        <!-- LESSON 2 -->
+        <div id="lesson2" class="lesson">
+            <h2>🔄 Lesson 2: Loops</h2>
+            <p>There are many types of loops, but for now we're going to focus on for loops.</p>
+
+            <h3>The Structure of a for Loop</h3>
+            <pre><code>for i in range(1, 10):
+    print(i)</code></pre>
+            <ul>
+                <li><code>for</code> — starts the loop</li>
+                <li><code>i</code> — variable holding the current value</li>
+                <li><code>in</code> — connects variable to the range</li>
+                <li><code>range(1, 10)</code> — numbers from 1 up to, but not including, 10</li>
+                <li><code>:</code> — "the code below belongs to this loop"</li>
+                <li><strong>Indentation (4 spaces)</strong> — Python knows which instructions to repeat</li>
+            </ul>
+
+            <h3>A Real Example</h3>
+            <pre><code>import time
+
+for i in range(10, 15):
+    time.sleep(1)
+    print("Hello")</code></pre>
+            <ul>
+                <li><code>range(10, 15)</code> gives: 10, 11, 12, 13, 14</li>
+                <li>The loop runs 5 times</li>
+                <li>Each time, it waits 1 second, then prints "Hello"</li>
+            </ul>
+            <div class="note">
+                <strong>⚠️ Common confusion:</strong> Beginners often think range(10, 15) includes 15. It doesn't. Python stops before reaching the second number.
+            </div>
+
+            <h3>Exercise</h3>
+            <p>Create a for loop that prints numbers from 1 to 100.</p>
+            <pre><code>for i in range(1, 101):
+    print(i)</code></pre>
+            <p><strong>Note:</strong> You don't need to define the variable before the loop. The for loop creates it for you automatically.</p>
+
+            <h3>Common Errors</h3>
+            <table>
+                <thead><tr><th>Error</th><th>Fix</th></tr></thead>
+                <tbody>
+                    <tr><td>SyntaxError</td><td>Forgot a quote or bracket</td></tr>
+                    <tr><td>IndentationError</td><td>Forgot 4 spaces after :</td></tr>
+                    <tr><td>NameError</td><td>Variable not defined or typo</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- LESSON 3 -->
+        <div id="lesson3" class="lesson">
+            <h2>🎲 Lesson 3: Booleans & If Statements</h2>
+
+            <h3>Booleans</h3>
+            <p>Think of them as the Yes/No switch. A boolean is either True or False.</p>
+            <pre><code>triggered = True   # first letter must be uppercase</code></pre>
+
+            <h3>If Statements</h3>
+            <p>If statements ask: "Is this boolean True?"</p>
+            <pre><code>triggered = False
+
+if triggered:
+    print("Triggered")</code></pre>
+            <div class="note">
+                <strong>💡 Pro tip:</strong> You <em>could</em> write <code>if triggered == True:</code>, but it's like asking "Is True equal to True?" Just write <code>if triggered:</code>. Cleaner, more Pythonic.
+            </div>
+
+            <h3>The not Keyword</h3>
+            <p>What if you want to check if something is False?</p>
+            <pre><code>triggered = False
+
+if not triggered:
+    print("Not triggered")</code></pre>
+            <p><strong>But not does more than booleans.</strong> It checks if something is "falsy":</p>
+            <pre><code>name = ""
+if not name:
+    print("No name provided")  # Runs because empty string is falsy
+
+count = 0
+if not count:
+    print("Nothing to count")  # Runs because 0 is falsy
+
+items = []
+if not items:
+    print("Empty list")  # Runs because empty list is falsy</code></pre>
+            <p><strong>Falsy values:</strong> False, None, 0, "", [], {}, 0.0 — everything else is truthy.</p>
+
+            <h3>Elif Statements</h3>
+            <p>An if statement asks one question. What if you have multiple possibilities? That's where elif comes in — "if not that, then check this."</p>
+            <pre><code>score = 85
+
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+else:
+    print("F")</code></pre>
+            <ul>
+                <li>Checks first if. Is 85 >= 90? No.</li>
+                <li>Moves to elif. Is 85 >= 80? Yes. Prints "B".</li>
+                <li>Stops there. Doesn't check the other elifs.</li>
+            </ul>
+
+            <h3>Questionnaire</h3>
+            <ol>
+                <li>What is printing and how does it help us programmers?</li>
+                <li>What are variables and what rules did you learn about them?</li>
+                <li>What are indentations and why do we need them?</li>
+                <li>What is the basic structure of a for loop? Explain each part line by line.<br>
+                <em>If you can't explain it in plain English, you don't understand it yet.</em></li>
+            </ol>
+
+            <h3>Fixiozner</h3>
+            <p>Fix the code below. On each line that has an error, identify the error and what it means.</p>
+            <pre><code>name = John
+age = 9
+print(f"Hello {name}</code></pre>
+        </div>
+
+        <div class="footer">
+            <p>Python Course — Learn Why, Not Just How</p>
+            <p>More lessons coming soon</p>
+        </div>
+    </div>
+</body>
+</html>
