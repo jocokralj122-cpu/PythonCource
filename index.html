@@ -207,6 +207,8 @@
             <a href="#lesson2">2. Loops</a>
             <a href="#lesson3">3. Booleans & If</a>
             <a href="#lesson4">4. Commentators</a>
+            <a href="#lesson5">5. Lists & while lopps</a>
+            
            
         </div>
 
@@ -441,8 +443,47 @@ print(f"Hello {name}</code></pre>
         <ul>
             <li>Exercise 1: Combine everything you have learned so far into 1 script</li>
             
+           <!-- LESSON X -->
+<div id="lesson5" class="lesson">
+    <h2>🎯 Lesson 5: Lists</h2>
+    
+    <h3>Lists</h3>
+    <p>Lists are a way to organise your variables values without writing 50 diffirent variables.A list can be assigned by using [] and consists of a value and a value only.To seperate values you use.And to put index in very simple terms its the position of an value starting at 0</p>
+    
+    <pre><code>my_list = ["John","Amanda"]</code></pre>
+    <p>To add values to a list you use insert(index, element): Inserts a single element at a specific position (index) in the list. Existing elements are shifted to the right.To remove a value you use .remove</p>
+    <pre><code>
+my_list = ["John","Amanda"]
+my_list.insert(2,"Johnny")
+my_list.remove("Johnny")
+    </pre></code>
+    
+        <ul>
+            <li>Practice: Create a list called my_list assign the value Johnny using a variable(you havent learned how todo that.Hint assign a variable first</li>
         </ul>
-         
+        
+    <h3>while loops</h3>
+    <p>While loops only run when a specific condition is meet.They are asking a question like is the users heath 100? if so while users health is 100 follow my specfic instructions.To stop a while loop you use break.Break must be at the indentation as the loop</p>
+    
+    <pre><code>
+import time
+health = 100
+while health == 100:
+    time.sleep(2)
+    print("Full Health")
+    time.sleep(3)
+break
+    </code></pre>
+    <div class="note">
+        <strong>💡 Tip:</strong> [Don't forget to add time.sleep to your while loop and don't forget to actully import time]
+    </div>
+    
+    <h3>Practice</h3>
+    <ul>
+        <li>Exercise 1: Combine everything you have learned so far into 1 script</li>
+    </ul>
+</div>           
+        </ul>   
     </div>
 
         <div class="footer">
